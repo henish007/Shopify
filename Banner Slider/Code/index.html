@@ -59,7 +59,10 @@
     height: 550px;
     object-fit: cover;
     object-position: center center;
-}  
+}
+.owl-carousel .owl-nav button{
+  	border-color: {{ section.settings.color_heading}} !important;
+}
 </style>
 
 
@@ -108,7 +111,13 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.image-banner.settings.image.label"
-        }
+        },
+        {
+          "type": "color",
+          "id": "color_heading",
+          "label": "Heading color",
+          "default": "#FFFFFF"
+        } 
 	],
 	"presets" : [
 		{
